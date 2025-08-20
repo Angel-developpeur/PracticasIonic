@@ -1,3 +1,4 @@
+import { importProvidersFrom } from "@angular/core";
 import { Routes } from "@angular/router";
 
 export const routes: Routes = [
@@ -6,6 +7,11 @@ export const routes: Routes = [
     //esto es para carga el modulo, el cual debe de encargarse de gestionar sus
     // propias rutas internas
     loadChildren: () => import("./home/home-module").then((m) => m.HomeModule),
+  },
+  {
+    path: "store",
+    loadChildren: () =>
+      import("./store/store-module").then((m) => m.StoreModule),
   },
   {
     path: "",
