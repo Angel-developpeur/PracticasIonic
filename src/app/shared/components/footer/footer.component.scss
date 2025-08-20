@@ -1,0 +1,22 @@
+.app-footer {
+  // Posicionamiento
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+
+  // Estilo
+  background-color: var(--ion-color-step-50); // Fondo claro, usa la variable de Ionic
+  color: var(--ion-color-medium); // Color de texto
+  font-size: 0.8rem;
+  border-top: 1px solid var(--ion-color-step-100); // Línea sutil en la parte superior
+
+  // Posición fija al final de la página (opcional)
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
