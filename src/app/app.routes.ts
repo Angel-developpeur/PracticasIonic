@@ -19,6 +19,12 @@ export const routes: Routes = [
       import('./notifications/notifications-module').then((m) => m.NotificationsModule),
   },
   {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact-module').then((m) => m.ContactModule)
+
+  },
+  {
     path: "",
     redirectTo: "home",
     pathMatch: "full",
