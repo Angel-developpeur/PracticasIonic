@@ -1,0 +1,33 @@
+.not-found-page {
+  --background: var(--ion-color-light); // Fondo claro, puedes cambiarlo
+
+  .not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .not-found-icon {
+    font-size: 8rem;
+    color: var(--ion-color-medium);
+    margin-bottom: 20px;
+  }
+
+  .not-found-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--ion-color-dark);
+    margin-bottom: 10px;
+  }
+
+  .not-found-message {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+}
