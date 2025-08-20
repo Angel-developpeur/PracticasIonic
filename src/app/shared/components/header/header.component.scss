@@ -1,0 +1,27 @@
+.app-header {
+  width: 100%;
+  background-color: #f8f9fa; // Un gris claro para el fondo
+  border-bottom: 1px solid #dee2e6; // Una línea sutil en la parte inferior
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Una sombra suave
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; // Alinea los elementos a los extremos
+  align-items: center;
+  max-width: 960px; // Opcional: Centra el contenido en pantallas grandes
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40; // Un gris oscuro para el texto
+  margin: 0;
+}
+
+.header-end-container {
+  display: flex;
+  align-items: center;
+}
