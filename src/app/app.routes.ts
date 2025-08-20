@@ -30,6 +30,10 @@ export const routes: Routes = [
       import('./user/user-module').then((m) => m.UserModule)
   },
   {
+    path: 'not-found',
+    loadComponent: () => import('./shared/pages/not-found/not-found.component').then((m) => m.NotFoundComponent)
+  },
+  {
     path: "",
     redirectTo: "home",
     pathMatch: "full",
