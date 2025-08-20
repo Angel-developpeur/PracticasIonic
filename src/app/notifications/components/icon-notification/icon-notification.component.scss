@@ -1,0 +1,45 @@
+.notification-icon-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px; // Para hacer el área de clic más grande
+}
+
+.notification-icon {
+  font-size: 1.5rem; // Tamaño del ícono
+  line-height: 1;
+  color: #343a40; // Color del ícono
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #dc3545; // Color rojo para notificaciones
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%; // Forma circular
+  padding: 4px 6px;
+  min-width: 20px;
+  text-align: center;
+  transform: translate(25%, -25%); // Ajusta la posición del badge
+
+  // Ocultar por defecto
+  display: none;
+
+  // Animación opcional para un efecto de "rebote"
+  animation: pulse 1.5s infinite;
+}
+
+// Clase para mostrar el badge
+.has-notification {
+  display: inline-block;
+}
+
+// Keyframes para la animación de rebote
+@keyframes pulse {
+  0% { transform: scale(1) translate(25%, -25%); }
+  50% { transform: scale(1.1) translate(25%, -25%); }
+  100% { transform: scale(1) translate(25%, -25%); }
+}
