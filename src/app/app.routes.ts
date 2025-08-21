@@ -14,24 +14,28 @@ export const routes: Routes = [
       import("./store/store-module").then((m) => m.StoreModule),
   },
   {
-    path: 'notifications',
+    path: "notifications",
     loadChildren: () =>
-      import('./notifications/notifications-module').then((m) => m.NotificationsModule),
+      import("./notifications/notifications-module").then(
+        (m) => m.NotificationsModule,
+      ),
   },
   {
-    path: 'contact',
+    path: "contact",
     loadChildren: () =>
-      import('./contact/contact-module').then((m) => m.ContactModule)
-
+      import("./contact/contact-module").then((m) => m.ContactModule),
   },
   {
-    path: 'user',
-    loadChildren: () =>
-      import('./user/user-module').then((m) => m.UserModule)
+    path: "user",
+    loadChildren: () => import("./user/user-module").then((m) => m.UserModule),
   },
   {
-    path: 'not-found',
-    loadComponent: () => import('./shared/pages/not-found/not-found.component').then((m) => m.NotFoundComponent)
+    path: "**", //con doble asterisco indicamos que cualquier ruta que no councida
+    //con alguna se rederija a este, es como el default de un switch
+    loadComponent: () =>
+      import("./shared/pages/not-found/not-found.component").then(
+        (m) => m.NotFoundComponent,
+      ),
   },
   {
     path: "",
