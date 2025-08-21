@@ -1,3 +1,21 @@
-<p>
-  article works!
-</p>
+<article class="articulo">
+  <!--podemos usar los if para solo mostrar el ocntenido si es que la varible tiene valor-->
+  @if(article){
+    <header>
+      <h1>{{article.title}}</h1>
+      <p class="meta">Publicado el 21 de agosto de 2025 por Juan Pérez</p>
+    </header>
+
+  <section class="contenido">
+      <div class="imagen-container">
+          <a href="https://ejemplo.com/enlace-de-la-imagen" target="_blank" rel="noopener noreferrer">
+              <!--Para usar el valor de una varibale en una propiedad, la propiedad se encierra dentro de []-->
+              <img [src]="article.image.url" [alt]="article.image.desc">
+          </a>
+            <!--y para usar el valor dentro de un elemento se usa dentro de {{}}-->
+          <p class="caption">{{article.descripcion}}</p>
+      </div>
+    </section>
+  }
+  
+</article>
