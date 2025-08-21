@@ -10,6 +10,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  // en los modulos ya viene incluido el RouterModule para usar routerLink,
+  // no es necesario inportarlo
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
