@@ -1,0 +1,99 @@
+/* Estilos del contenedor principal */
+.product-container {
+  display: flex;
+  flex-direction: column; /* Apila las secciones en dispositivos móviles */
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Sección de la imagen */
+.product-image-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Sección de la información del producto */
+.product-info-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.product-price {
+  font-size: 1.8em;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Estilos de los botones */
+.product-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.add-to-cart-btn, .buy-now-btn {
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.buy-now-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.buy-now-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Media query para hacer el diseño responsivo en pantallas grandes */
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row; /* Vuelve a poner las secciones en una fila en pantallas más grandes */
+    text-align: left;
+  }
+}

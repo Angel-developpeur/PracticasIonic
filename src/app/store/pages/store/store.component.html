@@ -1,13 +1,15 @@
-
 <ion-content>
-  <app-header>
-
-  </app-header>
-  <h1>Store</h1>
-  <app-product-detail>
-
-  </app-product-detail>
-  <app-header>
-
-  </app-header>
+    <app-header> </app-header>
+    <h1>Store</h1>
+    @if (!cargando) {
+        <!--el track index es una forma en la que angular puede iterar en el array
+        , si el elemento tiene un indice se puedeno poner item.id-->
+        @for (item of items; track $index) {
+        } @empty {
+            <h1>No hay datos</h1>
+        }
+        <app-product-detail> </app-product-detail>
+    } @else {
+        <h1>Cargando..</h1>
+    }
 </ion-content>

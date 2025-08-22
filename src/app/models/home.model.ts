@@ -13,4 +13,12 @@ export namespace models {
     };
     id?: string;
   }
+
+  export interface Item {
+    id?: string;
+    name: string;
+    description: string;
+    price: number;
+    image?: string;
+  }
 }
