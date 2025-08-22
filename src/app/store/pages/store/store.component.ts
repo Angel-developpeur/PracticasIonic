@@ -23,6 +23,18 @@ export class StoreComponent implements OnInit {
       console.log(this.items);
     }, 2000);
   }
+
+  keydown(){
+    console.log('key downs');
+  }
+
+  keyup(){
+    console.log('key up');
+  }
+
+  click(){
+    console.log('click');
+  }
 }
 
 const DataDemo: models.Item[] = [
